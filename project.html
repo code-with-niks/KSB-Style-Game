@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.game-container {
+    margin: 50px auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+#question-section h2 {
+    font-size: 24px;
+}
+
+#qr-code {
+    width: 200px;
+    margin: 20px 0;
+}
+
+#answer-feedback {
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+}
+
+#next-question {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <h1>Wellcome To KBC Style Game</h1>
+
+        <!-- Question Section -->
+        <div id="question-section">
+            <h2 id="question-text">HTML is parent of .....</h2>
+        </div>
+
+        <!-- QR Code Section -->
+        <div id="qr-code-section">
+            <img id="qr-code" src="qr-code-placeholder.png" alt="Scan the QR code to play!" />
+            <p>Scan the QR code to participate!</p>
+        </div>
+
+        <!-- Answer Feedback -->
+        <div id="answer-feedback">
+            <p id="congratulations-msg" style="display: none;">Congratulations!</p>
+        </div>
+
+        <!-- Next Question Button (hidden until correct answer) -->
+        <button id="next-question" style="display: none;">Next Question</button>
+    </div>
+
+    <script src="./js/project.js"></script>
+
+</body>
+</html>
